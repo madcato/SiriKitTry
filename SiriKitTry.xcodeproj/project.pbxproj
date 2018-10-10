@@ -12,6 +12,7 @@
 		3425AF27216E3B0600CF3828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3425AF25216E3B0600CF3828 /* Main.storyboard */; };
 		3425AF29216E3B0700CF3828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3425AF28216E3B0700CF3828 /* Assets.xcassets */; };
 		3425AF2C216E3B0700CF3828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3425AF2A216E3B0700CF3828 /* LaunchScreen.storyboard */; };
+		3425AF35216E3C3200CF3828 /* SiriHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425AF34216E3C3200CF3828 /* SiriHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		3425AF28216E3B0700CF3828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3425AF2B216E3B0700CF3828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3425AF2D216E3B0700CF3828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3425AF33216E3B5E00CF3828 /* SiriKitTry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriKitTry.entitlements; sourceTree = "<group>"; };
+		3425AF34216E3C3200CF3828 /* SiriHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,7 @@
 		3425AF15216E3B0500CF3828 = {
 			isa = PBXGroup;
 			children = (
+				3425AF34216E3C3200CF3828 /* SiriHelper.swift */,
 				3425AF20216E3B0600CF3828 /* SiriKitTry */,
 				3425AF1F216E3B0600CF3828 /* Products */,
 			);
@@ -54,6 +58,7 @@
 		3425AF20216E3B0600CF3828 /* SiriKitTry */ = {
 			isa = PBXGroup;
 			children = (
+				3425AF33216E3B5E00CF3828 /* SiriKitTry.entitlements */,
 				3425AF21216E3B0600CF3828 /* AppDelegate.swift */,
 				3425AF23216E3B0600CF3828 /* ViewController.swift */,
 				3425AF25216E3B0600CF3828 /* Main.storyboard */,
@@ -96,6 +101,11 @@
 				TargetAttributes = {
 					3425AF1D216E3B0500CF3828 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3425AF24216E3B0600CF3828 /* ViewController.swift in Sources */,
+				3425AF35216E3C3200CF3828 /* SiriHelper.swift in Sources */,
 				3425AF22216E3B0600CF3828 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriKitTry/SiriKitTry.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
 				INFOPLIST_FILE = SiriKitTry/Info.plist;
@@ -300,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriKitTry/SiriKitTry.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
 				INFOPLIST_FILE = SiriKitTry/Info.plist;
