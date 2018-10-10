@@ -13,7 +13,33 @@
 		3425AF29216E3B0700CF3828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3425AF28216E3B0700CF3828 /* Assets.xcassets */; };
 		3425AF2C216E3B0700CF3828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3425AF2A216E3B0700CF3828 /* LaunchScreen.storyboard */; };
 		3425AF35216E3C3200CF3828 /* SiriHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425AF34216E3C3200CF3828 /* SiriHelper.swift */; };
+		3425AF3D216E41E400CF3828 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425AF3C216E41E400CF3828 /* IntentHandler.swift */; };
+		3425AF41216E41E400CF3828 /* CoffeTime.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3425AF3A216E41E400CF3828 /* CoffeTime.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3425AF3F216E41E400CF3828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3425AF16216E3B0500CF3828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3425AF39216E41E400CF3828;
+			remoteInfo = CoffeTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3425AF45216E41E400CF3828 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3425AF41216E41E400CF3828 /* CoffeTime.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3425AF1E216E3B0500CF3828 /* SiriKitTry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriKitTry.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,10 +51,20 @@
 		3425AF2D216E3B0700CF3828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3425AF33216E3B5E00CF3828 /* SiriKitTry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriKitTry.entitlements; sourceTree = "<group>"; };
 		3425AF34216E3C3200CF3828 /* SiriHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriHelper.swift; sourceTree = "<group>"; };
+		3425AF3A216E41E400CF3828 /* CoffeTime.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CoffeTime.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3425AF3C216E41E400CF3828 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		3425AF3E216E41E400CF3828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3425AF1B216E3B0500CF3828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3425AF37216E41E400CF3828 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +79,7 @@
 			children = (
 				3425AF34216E3C3200CF3828 /* SiriHelper.swift */,
 				3425AF20216E3B0600CF3828 /* SiriKitTry */,
+				3425AF3B216E41E400CF3828 /* CoffeTime */,
 				3425AF1F216E3B0600CF3828 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				3425AF1E216E3B0500CF3828 /* SiriKitTry.app */,
+				3425AF3A216E41E400CF3828 /* CoffeTime.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +107,15 @@
 			path = SiriKitTry;
 			sourceTree = "<group>";
 		};
+		3425AF3B216E41E400CF3828 /* CoffeTime */ = {
+			isa = PBXGroup;
+			children = (
+				3425AF3C216E41E400CF3828 /* IntentHandler.swift */,
+				3425AF3E216E41E400CF3828 /* Info.plist */,
+			);
+			path = CoffeTime;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +126,34 @@
 				3425AF1A216E3B0500CF3828 /* Sources */,
 				3425AF1B216E3B0500CF3828 /* Frameworks */,
 				3425AF1C216E3B0500CF3828 /* Resources */,
+				3425AF45216E41E400CF3828 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3425AF40216E41E400CF3828 /* PBXTargetDependency */,
 			);
 			name = SiriKitTry;
 			productName = SiriKitTry;
 			productReference = 3425AF1E216E3B0500CF3828 /* SiriKitTry.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3425AF39216E41E400CF3828 /* CoffeTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3425AF42216E41E400CF3828 /* Build configuration list for PBXNativeTarget "CoffeTime" */;
+			buildPhases = (
+				3425AF36216E41E400CF3828 /* Sources */,
+				3425AF37216E41E400CF3828 /* Frameworks */,
+				3425AF38216E41E400CF3828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeTime;
+			productName = CoffeTime;
+			productReference = 3425AF3A216E41E400CF3828 /* CoffeTime.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -107,6 +173,9 @@
 							};
 						};
 					};
+					3425AF39216E41E400CF3828 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = 3425AF19216E3B0500CF3828 /* Build configuration list for PBXProject "SiriKitTry" */;
@@ -123,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				3425AF1D216E3B0500CF3828 /* SiriKitTry */,
+				3425AF39216E41E400CF3828 /* CoffeTime */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +205,13 @@
 				3425AF2C216E3B0700CF3828 /* LaunchScreen.storyboard in Resources */,
 				3425AF29216E3B0700CF3828 /* Assets.xcassets in Resources */,
 				3425AF27216E3B0600CF3828 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3425AF38216E41E400CF3828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +228,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3425AF36216E41E400CF3828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3425AF3D216E41E400CF3828 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3425AF40216E41E400CF3828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3425AF39216E41E400CF3828 /* CoffeTime */;
+			targetProxy = 3425AF3F216E41E400CF3828 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3425AF25216E3B0600CF3828 /* Main.storyboard */ = {
@@ -292,6 +385,7 @@
 		3425AF31216E3B0700CF3828 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SiriKitTry/SiriKitTry.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +405,7 @@
 		3425AF32216E3B0700CF3828 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SiriKitTry/SiriKitTry.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +417,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.SiriKitTry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3425AF43216E41E400CF3828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				INFOPLIST_FILE = CoffeTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.SiriKitTry.CoffeTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3425AF44216E41E400CF3828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				INFOPLIST_FILE = CoffeTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.SiriKitTry.CoffeTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -344,6 +477,15 @@
 			buildConfigurations = (
 				3425AF31216E3B0700CF3828 /* Debug */,
 				3425AF32216E3B0700CF3828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3425AF42216E41E400CF3828 /* Build configuration list for PBXNativeTarget "CoffeTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3425AF43216E41E400CF3828 /* Debug */,
+				3425AF44216E41E400CF3828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
