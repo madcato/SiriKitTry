@@ -5,7 +5,8 @@ https://developer.apple.com/documentation/sirikit#2979425
 
 ## NSUserActivity
 
-(From https://developer.apple.com/videos/play/wwdc2018/211/)
+- From https://developer.apple.com/videos/play/wwdc2018/211/
+- More info https://developer.apple.com/videos/play/wwdc2018/214/
 
 Able to:
 - To open something in your app
@@ -42,7 +43,7 @@ How to adopt:
 
 - Handle shortcut activation:
 
-        func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
             if userActivity.activityType == "com.myapp.name.my-activity-type" {
             // restore state for userActivity
             }

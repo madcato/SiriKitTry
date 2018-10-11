@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34180016216F291B00427E48 /* AskForACoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34180015216F291B00427E48 /* AskForACoffee.swift */; };
 		3425AF22216E3B0600CF3828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425AF21216E3B0600CF3828 /* AppDelegate.swift */; };
 		3425AF24216E3B0600CF3828 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425AF23216E3B0600CF3828 /* ViewController.swift */; };
 		3425AF27216E3B0600CF3828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3425AF25216E3B0600CF3828 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		34180015216F291B00427E48 /* AskForACoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskForACoffee.swift; sourceTree = "<group>"; };
 		3425AF1E216E3B0500CF3828 /* SiriKitTry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriKitTry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3425AF21216E3B0600CF3828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3425AF23216E3B0600CF3828 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				3425AF28216E3B0700CF3828 /* Assets.xcassets */,
 				3425AF2A216E3B0700CF3828 /* LaunchScreen.storyboard */,
 				3425AF2D216E3B0700CF3828 /* Info.plist */,
+				34180015216F291B00427E48 /* AskForACoffee.swift */,
 			);
 			path = SiriKitTry;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3425AF24216E3B0600CF3828 /* ViewController.swift in Sources */,
+				34180016216F291B00427E48 /* AskForACoffee.swift in Sources */,
 				3425AF35216E3C3200CF3828 /* SiriHelper.swift in Sources */,
 				3425AF22216E3B0600CF3828 /* AppDelegate.swift in Sources */,
 			);

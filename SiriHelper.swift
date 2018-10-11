@@ -6,7 +6,11 @@
 //  Copyright © 2018 veladan. All rights reserved.
 //
 
+import Foundation
+import UIKit
 import Intents
+import CoreSpotlight
+import CoreServices
 
 class SiriHelper {
     public static var siriAvailable: Bool = false
@@ -38,6 +42,24 @@ class SiriHelper {
             break
         }
 
+    }
+
+    static func donateAskForACoffee(_ viewController: UIViewController) {
+        let userActivity = NSUserActivity(activityType: NSUserActivity.askForACoffeType)
+        userActivity.isEligibleForSearch = true
+        userActivity.isEligibleForPrediction = true  // To add it to Siri Shortcuts
+        userActivity.title = "¿Quieres un café?"
+        userActivity.userInfo = ["key": "askForCoffee"]
+        userActivity.suggestedInvocationPhrase = "Quiero un café"
+        #if canImport(CoreSpotlight)
+            let attributes = CSSearchableItemAttributeSet(itemContentType: kUTTypeContent as String)
+            attributes.thumbnailData = #imageLiteral(resourceName: "tomato").pngData() // Used as an icon in Search.
+            attributes.keywords = ["Order", "Coffe"]
+            attributes.displayName = "Ordenar café"
+            attributes.contentDescription = "Para ordenar un café"
+            userActivity.contentAttributeSet = attributes
+        #endif
+        viewController.userActivity = userActivity
     }
 
     static func suggestShortcut() {
