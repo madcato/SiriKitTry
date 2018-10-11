@@ -6,7 +6,6 @@ https://developer.apple.com/documentation/sirikit#2979425
 ## NSUserActivity
 
 - From https://developer.apple.com/videos/play/wwdc2018/211/
-- More info https://developer.apple.com/videos/play/wwdc2018/214/
 
 Able to:
 - To open something in your app
@@ -29,7 +28,7 @@ How to adopt:
         userActivity.isEligibleForPrediction = true  // To add it to Siri Shortcuts
         userActivity.title = "Titulo"
         userActivity.userInfo = ["key": "value"]
-        userActivity.suggestedInvocationPhrase = "Let's do it"
+        userActivity.suggestedInvocationPhrase = "I wnat a coffee"
         #if canImport(CoreSpotlight)
             let attributes = CSSearchableItemAttributeSet(itemContentType: kUTTypeContent as String)
             attributes.thumbnailData = #imageLiteral(resourceName: "tomato").pngData() // Used as an icon in Search.
@@ -52,7 +51,12 @@ How to adopt:
 
 
 ## Intents
+
+- More info https://developer.apple.com/videos/play/wwdc2018/214/
+
+
 - Custom UI
 - Custom voice response
+- Relevant intents
 
 

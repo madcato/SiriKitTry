@@ -15,6 +15,7 @@ import CoreServices
 class SiriHelper {
     public static var siriAvailable: Bool = false
 
+    // Not needed for NSUserActivity, required only for Intents
     static func requireAuthorizationIfNeeded() {
         let status = INPreferences.siriAuthorizationStatus()
         switch status {

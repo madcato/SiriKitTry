@@ -79,7 +79,6 @@
 		3425AF15216E3B0500CF3828 = {
 			isa = PBXGroup;
 			children = (
-				3425AF34216E3C3200CF3828 /* SiriHelper.swift */,
 				3425AF20216E3B0600CF3828 /* SiriKitTry */,
 				3425AF3B216E41E400CF3828 /* CoffeTime */,
 				3425AF1F216E3B0600CF3828 /* Products */,
@@ -105,6 +104,7 @@
 				3425AF28216E3B0700CF3828 /* Assets.xcassets */,
 				3425AF2A216E3B0700CF3828 /* LaunchScreen.storyboard */,
 				3425AF2D216E3B0700CF3828 /* Info.plist */,
+				3425AF34216E3C3200CF3828 /* SiriHelper.swift */,
 				34180015216F291B00427E48 /* AskForACoffee.swift */,
 			);
 			path = SiriKitTry;
