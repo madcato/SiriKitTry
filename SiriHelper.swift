@@ -39,4 +39,22 @@ class SiriHelper {
         }
 
     }
+
+    static func suggestShortcut() {
+        // Add a user activity to the list of suggestions.
+//        var suggestions = [INShortcut(userActivity: orderFavoriteBeverageUserActivity)]
+
+//        // Add an intent to the list of suggestions. To create
+//        // a shortcut from an intent, the intent must be valid.
+//        if let shortcut = INShortcut(intent: orderSoupOfTheDayIntent) {
+//            suggestions.append(shortcut)
+//        }
+        // Suggest the shortcuts.
+//        INVoiceShortcutCenter.shared.setShortcutSuggestions(suggestions)
+
+//        let shortcut = [INShortcut(userActivity: orderSoupOfTheDayIntent)]
+//
+//        // Suggest the shortcuts.
+//        INVoiceShortcutCenter.shared.setShortcutSuggestions(shortcut)
+    }
 }
